@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+<meta charset='UTF-8'>
+<title>Estatísticas da Mega Sena</title>
+<style>
+body {font-family: Arial, sans-serif;}
+.sidebar {width: 200px; position: fixed; height: 100%; background-color: #f1f1f1; padding: 20px 10px;}
+.main {margin-left: 200px; padding: 20px;}
+nav a {display: block; padding: 10px; text-decoration: none; background-color: #f1f1f1;}
+nav a:hover {background-color: #ddd;}
+iframe {width: 100%; height: 800px; border: none;}
+</style>
+<script>
+function carregarPagina(url) {
+  document.getElementById('iframe').src = url;
+}
+</script>
+</head>
+<body>
+<div class='sidebar'>
+<h1>Estatisticas da Mega Sena</h1>
+<nav>
+<a href='javascript:void(0)' onclick="carregarPagina('dezenas_mais_sorteadas.html')">dezenas mais sorteadas</a>
+<a href='javascript:void(0)' onclick="carregarPagina('dezenas_menos_sorteadas.html')">dezenas menos sorteadas</a>
+<a href='javascript:void(0)' onclick="carregarPagina('dezenas_nao_sorteadas_ha_mais_tempo.html')">dezenas nao sorteadas ha mais tempo</a>
+<a href='javascript:void(0)' onclick="carregarPagina('combinacoes_4_mais_repetidas.html')">combinacoes 4 mais repetidas</a>
+<a href='javascript:void(0)' onclick="carregarPagina('combinacoes_5_mais_repetidas.html')">combinacoes 5 mais repetidas</a>
+<a href='javascript:void(0)' onclick="carregarPagina('combinacoes_6_mais_repetidas.html')">combinacoes 6 mais repetidas</a>
+<a href='javascript:void(0)' onclick="carregarPagina('pares_impares.html')">pares impares</a>
+<a href='javascript:void(0)' onclick="carregarPagina('soma_numeros_mais_sorteados.html')">soma numeros mais sorteados</a>
+</nav>
+</div>
+<div class='main'>
+<h2 style='margin-left: 20px; color:#168EA6;'>Resultado mais recente</h2>
+<table>
+<table style='border-collapse: collapse; width: 100%; margin-left: 2em;'>
+<tr style='border-bottom: 1px solid black;'>
+<th style='text-align: left; color:#168EA6;'>Data</th>
+<th style='text-align: left; color:#168EA6;'>Dezena 1</th>
+<th style='text-align: left; color:#168EA6;'>Dezena 2</th>
+<th style='text-align: left; color:#168EA6;'>Dezena 3</th>
+<th style='text-align: left; color:#168EA6;'>Dezena 4</th>
+<th style='text-align: left; color:#168EA6;'>Dezena 5</th>
+<th style='text-align: left; color:#168EA6;'>Dezena 6</th>
+<th style='text-align: left; color:#168EA6;'>Valor Acumulado</th>
+</tr>
+<tr>
+<td style='text-align: left; color:#2DAFAF;'>20/05/2023</td>
+<td style='text-align: left; color:#2DAFAF;'>7</td>
+<td style='text-align: left; color:#2DAFAF;'>26</td>
+<td style='text-align: left; color:#2DAFAF;'>32</td>
+<td style='text-align: left; color:#2DAFAF;'>35</td>
+<td style='text-align: left; color:#2DAFAF;'>49</td>
+<td style='text-align: left; color:#2DAFAF;'>55</td>
+<td style='text-align: left; color:#2DAFAF;'>R$ 31.016.661,57</td>
+</tr>
+</table>
+</table>
+<iframe id='iframe' src='dezenas_mais_sorteadas.html'></iframe>
+</div>
+</body>
+</html>
