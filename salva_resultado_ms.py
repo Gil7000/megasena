@@ -44,4 +44,4 @@ def salvar_resultados_mega_sena(concurso_inicial, concurso_final):
     cursor.close()
     conn.close()
 
-salvar_resultados_mega_sena(2587, 2594)
+salvar_resultados_mega_sena(2595, 2596)
